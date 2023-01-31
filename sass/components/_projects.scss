@@ -1,0 +1,24 @@
+.projects-row-1,
+.projects-row-2,
+.projects-row-3,
+.projects-row-4 {
+  display: flex;
+  width: 100%;
+  padding: 50px;
+}
+
+div.polaroid {
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  padding-right: 20px;
+}
+div.name {
+  padding: 10px;
+  background-color: white;
+}
+
+div.polaroid:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}

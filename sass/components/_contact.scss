@@ -1,0 +1,118 @@
+.contact {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+  margin-bottom: 100px;
+
+  img {
+    width: 50px;
+    background-color: yellow;
+    padding: 10px;
+    border-radius: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+div.address {
+  background-color: black;
+  border: 1px solid yellow;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-left: 50px;
+  text-align: center;
+  padding: 100px 80px 50px 80px;
+  border-radius: 100px 0px 0px 100px;
+
+  address {
+    background-color: yellow;
+    padding: 10px 30px;
+    border-radius: 10px;
+  }
+}
+
+.email {
+  background-color: black;
+  border: 1px solid yellow;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-right: 50px;
+  border-radius: 0px 100px 100px 0px;
+  padding-right: 50px;
+  text-align: center;
+  padding: 100px 50px 100px 50px;
+  p {
+    background-color: yellow;
+    padding: 10px 10px;
+    border-radius: 10px;
+  }
+}
+
+.phone {
+  background-color: black;
+  border: 1px solid var(--delta);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  padding: 100px 50px 100px 50px;
+  border-radius: 100%;
+  p {
+    background-color: yellow;
+    padding: 10px 10px;
+    border-radius: 10px;
+  }
+}
+
+#aisensy-wa-widget {
+  right: 50%;
+}
+
+@include respond-to("medium") {
+  .contact {
+    display: block;
+    width: 100%;
+    height: auto;
+    img {
+      background-color: white;
+    }
+  }
+
+  div.address {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 100px;
+    padding: 100px 50px 100px 50px;
+    border-radius: 0px;
+    border: 1px solid white;
+
+    address {
+      background-color: white;
+      padding: 5px;
+      border-radius: 0px;
+    }
+  }
+
+  .phone {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 100px;
+    text-align: center;
+    padding: 100px 50px 100px 50px;
+    border-radius: 0%;
+
+    p {
+      background-color: white;
+      padding: 10px 10px;
+      border-radius: 0px;
+    }
+  }
+
+  .email {
+    border: 1px solid white;
+    margin-right: 50px;
+    margin-left: 50px;
+    border-radius: 0px;
+    padding: 100px 50px 100px 50px;
+    p {
+      background-color: white;
+      padding: 10px 10px;
+      border-radius: 0px;
+    }
+  }
+}

@@ -434,7 +434,7 @@ li {
 }
 
 .bg_img {
-  background-image: url("../../images/bg_img.jpg");
+  background-image: url("../images/bg_img.jpg");
   background-size: cover;
   width: 100%;
   height: 100%;

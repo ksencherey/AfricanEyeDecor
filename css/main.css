@@ -1,12 +1,12 @@
 :root {
   --alpha: black;
   --beta: yellow;
-  --gamma: #1d2730;
-  --delta: #ededed;
-  --alert: #fd5959;
-  --contrast: #e84188;
-  --elements: #c4c4c4;
-  --light: #fff;
+  --gamma: #1D2730;
+  --delta: #EDEDED;
+  --alert: #FD5959;
+  --contrast: #E84188;
+  --elements: #C4C4C4;
+  --light: #FFF;
 }
 
 @font-face {
@@ -92,7 +92,7 @@ abbr[title] {
   border-bottom: none; /* 1 */
   text-decoration: underline; /* 2 */
   -webkit-text-decoration: underline dotted;
-  text-decoration: underline dotted; /* 2 */
+          text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -172,8 +172,7 @@ textarea {
  * 1. Show the overflow in Edge.
  */
 button,
-input {
-  /* 1 */
+input { /* 1 */
   overflow: visible;
 }
 
@@ -182,8 +181,7 @@ input {
  * 1. Remove the inheritance of text transform in Firefox.
  */
 button,
-select {
-  /* 1 */
+select { /* 1 */
   text-transform: none;
 }
 
@@ -191,9 +189,9 @@ select {
  * Correct the inability to style clickable types in iOS and Safari.
  */
 button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
+[type=button],
+[type=reset],
+[type=submit] {
   -webkit-appearance: button;
 }
 
@@ -201,9 +199,9 @@ button,
  * Remove the inner border and padding in Firefox.
  */
 button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
@@ -212,9 +210,9 @@ button::-moz-focus-inner,
  * Restore the focus styles unset by the previous rule.
  */
 button:-moz-focusring,
-[type="button"]:-moz-focusring,
-[type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring {
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -258,8 +256,8 @@ textarea {
  * 1. Add the correct box sizing in IE 10.
  * 2. Remove the padding in IE 10.
  */
-[type="checkbox"],
-[type="radio"] {
+[type=checkbox],
+[type=radio] {
   box-sizing: border-box; /* 1 */
   padding: 0; /* 2 */
 }
@@ -267,8 +265,8 @@ textarea {
 /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
   height: auto;
 }
 
@@ -276,7 +274,7 @@ textarea {
  * 1. Correct the odd appearance in Chrome and Safari.
  * 2. Correct the outline style in Safari.
  */
-[type="search"] {
+[type=search] {
   -webkit-appearance: textfield; /* 1 */
   outline-offset: -2px; /* 2 */
 }
@@ -284,7 +282,7 @@ textarea {
 /**
  * Remove the inner padding in Chrome and Safari on macOS.
  */
-[type="search"]::-webkit-search-decoration {
+[type=search]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
@@ -436,7 +434,7 @@ li {
 }
 
 .bg_img {
-  background-image: url("/AfricanEyeDecorWebsite/images/bg_img.jpg");
+  background-image: url("bg/images/bg_img.jpg");
   background-size: cover;
   width: 100%;
   height: 100%;
@@ -462,8 +460,7 @@ nav ul li {
   background-color: rgba(0, 0, 0, 0.3333333333);
   color: var(--beta);
   display: grid;
-  grid-template-columns: 1fr -webkit-min-content minmax(590rem, auto -webkit-min-content
-        1fr);
+  grid-template-columns: 1fr -webkit-min-content minmax(590rem, auto -webkit-min-content 1fr);
   grid-template-columns: 1fr min-content minmax(590rem, auto min-content 1fr);
   padding: 20rem;
   width: 100%;
@@ -613,8 +610,8 @@ hr {
   font-size: 30px;
   border-radius: 3px 3px 3px 3px;
   -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+   -ms-user-select: none;
+       user-select: none;
   -webkit-user-select: none;
 }
 
@@ -649,8 +646,7 @@ hr {
   background-color: rgba(0, 0, 0, 0.3333333333);
   padding: 16px;
   font-size: 20px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: bisque;
   grid-column: 2/3;
   grid-row: 2/3;
@@ -702,7 +698,7 @@ hr {
 /* Add a transparency effect for thumnbail images */
 .demo {
   opacity: 0.6;
-  height: 150px;
+  height: 100px;
 }
 
 .active,
@@ -725,14 +721,14 @@ hr {
     display: none;
   }
   .prev,
-  .next {
+.next {
     padding: 10px 20px;
     margin-top: 280px;
     color: #008;
     font-size: 25px;
   }
   .prev:hover,
-  .next:hover {
+.next:hover {
     background-color: var(--alpha);
     padding: 10px 20px;
     color: var(--delta);
@@ -860,8 +856,7 @@ hr {
   width: 100%;
   position: relative;
 }
-.image-hero__left,
-.image-hero__right {
+.image-hero__left, .image-hero__right {
   position: relative;
 }
 .image-hero__left:hover > img {
@@ -878,14 +873,10 @@ hr {
 .image-hero__right:hover > div > p {
   display: none;
 }
-.image-hero__left,
-.image-hero__middle,
-.image-hero__right {
+.image-hero__left, .image-hero__middle, .image-hero__right {
   border: 1px solid var(--delta);
 }
-.image-hero__left img,
-.image-hero__middle img,
-.image-hero__right img {
+.image-hero__left img, .image-hero__middle img, .image-hero__right img {
   width: 100%;
   height: 100%;
 }
@@ -1047,29 +1038,28 @@ hr {
     font-size: 100px;
   }
   .hero,
-  .hero-2,
-  .hero-3 {
+.hero-2,
+.hero-3 {
     display: block;
     width: 100%;
     margin-top: 200px;
   }
   .hero__description,
-  .hero-2__description,
-  .hero-3__description {
+.hero-2__description,
+.hero-3__description {
     width: 100%;
     border: 1px solid yellow;
   }
-  .hero__description h1,
-  .hero__description h2,
-  .hero-2__description h1,
-  .hero-2__description h2,
-  .hero-3__description h1,
-  .hero-3__description h2 {
+  .hero__description h1, .hero__description h2,
+.hero-2__description h1,
+.hero-2__description h2,
+.hero-3__description h1,
+.hero-3__description h2 {
     color: yellow;
   }
   .hero img,
-  .hero-2 img,
-  .hero-3 img {
+.hero-2 img,
+.hero-3 img {
     width: 100%;
   }
   .center {
@@ -1256,27 +1246,27 @@ img:hover {
 
 @media (max-width: 992px) {
   .portfolio-row-1,
-  .portfolio-row-2,
-  .portfolio-row-3,
-  .portfolio-row-4 {
+.portfolio-row-2,
+.portfolio-row-3,
+.portfolio-row-4 {
     display: inline-block;
     width: 100%;
   }
   .portfolio-row-1 img,
-  .portfolio-row-2 img,
-  .portfolio-row-3 img,
-  .portfolio-row-4 img {
+.portfolio-row-2 img,
+.portfolio-row-3 img,
+.portfolio-row-4 img {
     width: 100%;
     height: 100%;
     border: 1px solid white;
   }
   .portfolio-row-2,
-  .portfolio-row-3 {
+.portfolio-row-3 {
     height: auto;
   }
   .portfolio-row-1,
-  .portfolio-row-2,
-  .portfolio-row-3 {
+.portfolio-row-2,
+.portfolio-row-3 {
     padding-bottom: 0px;
   }
-} /*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */

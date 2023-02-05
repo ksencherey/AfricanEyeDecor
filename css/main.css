@@ -1225,7 +1225,9 @@ div.polaroid:hover {
 .portfolio-row-3 img,
 .portfolio-row-4 img {
   width: 33.3%;
-  filter: brightness(50%);
+  height: 300px;
+  filter: brightness(70%);
+  border: 1px solid white;
 }
 
 .portfolio-row-1,

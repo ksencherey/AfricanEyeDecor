@@ -7,8 +7,9 @@
   height: 100%;
   img {
     width: 33.3%;
-    // height: 50%;
-    filter: brightness(50%);
+    height: 300px;
+    filter: brightness(70%);
+    border: 1px solid white;
   }
 }
 

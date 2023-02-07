@@ -1236,6 +1236,12 @@ div.polaroid:hover {
   padding-bottom: 150px;
 }
 
+.portfolio-row-2,
+.portfolio-row-3,
+.portfolio-row-4 {
+  padding-top: 100px;
+}
+
 img:hover {
   cursor: pointer;
   filter: brightness(100%);

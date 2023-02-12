@@ -966,8 +966,12 @@ hr {
 }
 
 .fa {
-  font-size: 150px;
-  color: bisque;
+  font-size: 80px;
+  background-color: yellow;
+  border-radius: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  color: black;
 }
 
 .hero,
@@ -992,7 +996,7 @@ hr {
 .hero__description p,
 .hero-2__description p,
 .hero-3__description p {
-  padding-top: 20px;
+  padding-top: 40px;
 }
 .hero__description h2,
 .hero__description h1,
@@ -1024,8 +1028,8 @@ hr {
     left: 45%;
   }
   .fa {
-    color: var(--delta);
-    font-size: 100px;
+    color: rg;
+    font-size: 80px;
   }
   .hero,
   .hero-2,
@@ -1040,7 +1044,8 @@ hr {
     width: 100%;
     border: 1px solid yellow;
   }
-  .hero__description h1, .hero__description h2,
+  .hero__description h1,
+  .hero__description h2,
   .hero-2__description h1,
   .hero-2__description h2,
   .hero-3__description h1,
@@ -1054,6 +1059,80 @@ hr {
   }
   .center {
     padding-top: 5%;
+  }
+}
+@media (min-width: 993px) and (max-width: 1500px) {
+  .hero,
+  .hero-3 {
+    display: flex;
+    height: 600px;
+  }
+  .hero img,
+  .hero-3 img {
+    width: 50%;
+    height: 600px;
+  }
+  .hero__description,
+  .hero-3__description {
+    width: 50%;
+    height: 600px;
+    width: 50%;
+    padding: 10px;
+    font-size: 18px;
+  }
+  .hero__description p,
+  .hero-3__description p {
+    padding-top: 20px;
+  }
+  .hero__description h2,
+  .hero__description h1,
+  .hero-3__description h2,
+  .hero-3__description h1 {
+    font-size: 20px;
+    padding-bottom: 10px;
+  }
+  .center {
+    padding-top: 200px;
+  }
+  .hero__description {
+    padding-top: 40px;
+  }
+  .hero-2__description {
+    font-size: 18px;
+    padding: 5px;
+  }
+  .hero-2__description p {
+    font-size: 18px;
+    padding-top: 2px;
+  }
+  .hero-2__description h1 {
+    font-size: 20px;
+    padding-bottom: 2px;
+  }
+  .drop {
+    top: 85%;
+    left: 50%;
+  }
+  .fa {
+    font-size: 80px;
+    background-color: white;
+    border-radius: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    color: black;
+  }
+}
+@media (min-width: 1501px) {
+  .hero__description {
+    padding-top: 200px;
+  }
+  .fa {
+    font-size: 80px;
+    background-color: yellow;
+    border-radius: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    color: black;
   }
 }
 #map {

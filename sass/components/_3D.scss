@@ -28,8 +28,12 @@
 }
 
 .fa {
-  font-size: 150px;
-  color: bisque;
+  font-size: 80px;
+  background-color: yellow;
+  border-radius: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  color: black;
 }
 
 .hero,
@@ -50,7 +54,7 @@
     font-size: 20px;
 
     p {
-      padding-top: 20px;
+      padding-top: 40px;
     }
 
     h2,
@@ -80,8 +84,8 @@
   }
 
   .fa {
-    color: var(--delta);
-    font-size: 100px;
+    color: rgb(red, green, blue);
+    font-size: 80px;
   }
 
   .hero,
@@ -90,19 +94,107 @@
     display: block;
     width: 100%;
     margin-top: 200px;
-    &__description{
+    &__description {
       width: 100%;
       border: 1px solid yellow;
 
-      h1, h2{
+      h1,
+      h2 {
         color: yellow;
       }
     }
-    img{
+    img {
       width: 100%;
     }
   }
-  .center{
+  .center {
     padding-top: 5%;
+  }
+}
+
+@media (min-width: 993px) and (max-width: 1500px) {
+  .hero,
+  .hero-3 {
+    display: flex;
+    height: 600px;
+    // white-space: nowrap;
+    img {
+      width: 50%;
+      height: 600px;
+    }
+    &__description {
+      width: 50%;
+      height: 600px;
+      width: 50%;
+      padding: 10px;
+      font-size: 18px;
+    }
+    &__description {
+      p {
+        padding-top: 20px;
+      }
+
+      h2,
+      h1 {
+        font-size: 20px;
+        padding-bottom: 10px;
+      }
+    }
+  }
+
+  .center {
+    padding-top: 200px;
+  }
+
+  .hero {
+    &__description {
+      padding-top: 40px;
+    }
+  }
+
+  .hero-2 {
+    &__description {
+      font-size: 18px;
+
+      padding: 5px;
+      p {
+        font-size: 18px;
+        padding-top: 2px;
+      }
+      h1 {
+        font-size: 20px;
+        padding-bottom: 2px;
+      }
+    }
+  }
+
+  .drop {
+    top: 85%;
+    left: 50%;
+  }
+
+  .fa {
+    font-size: 80px;
+    background-color: white;
+    border-radius: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    color: black;
+  }
+}
+
+@media (min-width: 1501px) {
+  .hero {
+    &__description {
+      padding-top: 200px;
+    }
+  }
+  .fa {
+    font-size: 80px;
+    background-color: yellow;
+    border-radius: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    color: black;
   }
 }
